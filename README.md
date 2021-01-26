@@ -1,41 +1,44 @@
 # Module2-reflection
-*** reflection 25/1/2021
+# reflection 26-1-2021
+***
 <br>
-1. Mô hình client - server là khi một máy khách (client) gửi một cái yêu cầu đến máy chủ (server) thì máy chủ sẽ xử lý 
-   phía sever và trả về kết quả trong thời gian ngắn nhất.Máy khách và máy chủ giao tiếp được với nhau thông qua 
-   giao thức( ở đây học HTTP) và yêu cầu gửi đi từ máy khách gọi là HTTP request và kết quả trả về từ máy chủ là 
-   HTTP reponsive
+1.Mảng trong php có 3 loại:
 <br>
-2. máy chủ (server) học trong phần này là LAMP nó bao gồm Linux, Apache, MySQL và PHP các thành phần này được sắp xếp 
-   theo các lớp hỗ trợ lẫn nhau gọi là stack phần mềm
-   <br>
-   - Linux: hệ điều hành nền tảng cho các lớp phần mềm khác
-     <br>
-   - Apache là webserver dùng để đón nhận các request (yêu cầu) của người dùng, xử lý và trả về kết quả
-     <br>
-   - MySQL là hệ quản trị CSDL có chức năng lưu trữ dữ liệu, bảo mật, cung cấp công cụ để truy xuất dữ liệu 
-     và nhiều tính năng khác 
-     <br>
-   - PHP là ngôn ngữ lập trình phía sever. Xử lý các nhiệm vụ cần thiết hoặc kết nối với CSDL MySQL để lấy thông tin 
-     cần thiết sau đó trả về cho Apache.
-     <br>
-3. Có loại wedsite
+- Mảng 1 chiều và mảng đa chiều theo chỉ số index giống với javascript
 <br>
-   - Web tĩnh (static website) giống như một tờ báo người dùng chỉ có thể xem và không thể tương tác được với nó
+- Mảng liên kết (associative array) là mảng sử dụng các key là tên thay cho chỉ số thông thường
 <br>
-   - Web động ( dynamic website) có thêm xử lý thông tin và truy xuất dữ liệu nên nội dung của trang web sẽ thay đổi 
-     khi khác hàng yêu cầu hoặc theo ngày giờ. 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp VD: $age = array("Peter"=>"35", "Ben"=>"37","Joe"=>"43");
 <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Dùng: foreach($age as $key => $value){
+<br>	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp		echo $key. ":". $value;
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp			}
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp để duyệt tất cả phần tử ( các cặp key và value tương ứng) của mảng.
 <br>
+2. Nhúng trang php.
+<br> 
+- nhúng nội dung của một trang php vào một trang php.
 <br>
-****      Reflection module 2
+- có một số cơ chế khác nhau:
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp + include "filename.php";
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp + include_once "filename.php";
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp + require "filename.php";
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp + require_once "filename.php";
+<br> -sự khách nhau giữa các cơ chế khi xảy ra lỗi:
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp + include, include_once thì tung ra cảnh báo (E-WARNING) và tiếp tục thực thi.
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp + require, require_once thì tung ra lỗi nghiêm trọng (E_COMPIE_ERROR) và dừng thực thi.
+<br> - sự khác nhau giữa include, require và include_once, require_once :
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp  + include, require thì có thể nhúng trang php nhiều lần ở nhiều nơi.
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp  + include_once, require_once chỉ có thể nhúng trang php một lần duy nhất.Nếu lần sau sử 
+dụng lại thì php tự bỏ qua 
+<br> 
 <br>
-1.Nắm vững về cấu trúc dữ liệu và thuật toán
-<br>
-2.Thiết kế được wedsite và các ứng dụng wedsite bằng ngôn ngữ lập trình PHP dựa 
-   trên mô hình lập trình hướng đối tượng.
-<br>
-3.thiết kế và quản lý được cơ sở dữ liệu bằng MySQL
-<br>
-4.sử dụng thành thạo CSS và framework bootstrap để phát triển wedsite chuẩn reponsive   
-   
+3. các kiểu lỗi hay xảy ra:
+<br> - lỗi cú pháp (Syntax Error) xảy ra tại thời gian biên dịch trong các ngôn ngữ truyền thống và trong thời gian thông dịch trong js, php
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp VD: thiếu dấu ngoặc tròn trong biểu thức điều kiện.
+<br> - Fatal Error là loại lỗi khi biên dịch code PHP và hiểu những gì mình viết, tuy nhiên nó nhận ra trong đó có một hàm không được khai báo. Điều này có nghĩa là hàm được gọi nhưng hàm đó lại không được định nghĩa. Và dừng thực thi chương trình.
+<br> - Warning Errors là lỗi cảnh báo và không dừng việc thực thi chương trình. Lý do chính cho các lỗi cảnh báo là bao gồm một file nào đó bị thiếu hoặc sử dụng tham số không chính xác trong một chức năng.
+<br> -Notice Error là một lỗi giống như Warning Errors, tức là những lỗi nhỏ, không nghiêm trọng mà PHP gặp phải khi thực thi tập lệnh 
+<br> &nbsp&nbsp&nbsp&nbsp&nbsp 	 VD: truy cập vào một biến chưa được xác định.
+
+
