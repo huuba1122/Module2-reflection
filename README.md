@@ -161,3 +161,13 @@ VD: echo "language one: " + languages::$name;
 3. Có loại wedsite
 - Web tĩnh (static website) giống như một tờ báo người dùng chỉ có thể xem và không thể tương tác được với nó
 - Web động ( dynamic website) có thêm xử lý thông tin và truy xuất dữ liệu nên nội dung của trang web sẽ thay đổi khi khác hàng yêu cầu hoặc theo ngày giờ.
+
+### Reflection module 2:
+
+MỤC TIÊU
+1. Nắm vững về cấu trúc dữ liệu và thuật toán
+2.Thiết kế được wedsite và các ứng dụng wedsite bằng ngôn ngữ lập trình PHP dựa trên mô hình lập trình hướng đối tượng.
+
+3. thiết kế và quản lý được cơ sở dữ liệu bằng SQL
+
+4. sử dụng thành thạo CSS và framework bootstrap để phát triển wedsite chuẩn reponsive
