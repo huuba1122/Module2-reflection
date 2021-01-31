@@ -1,4 +1,100 @@
 # Module2-reflection
+***
+# Reflection 29/1/2021
+***
+#### 1.kế thừa trong php
+>- cú pháp: 
+>> `class nameChild extents nameParent{
+ 		// code
+ 	}`
+>- class có tên là "nameChild" được gọi là lớp con.
+>- class có tên là "nameParent" được gọi là lớp cha.
+>- Lớp con có mọi thuộc tính và phương thức mà lớp cha có (trừ những phương thức và thuộc tính có mức truy xuất "private"). và có thể định nghĩa thêm thuộc tính và phương thức mới.
+---
+####  2. Các loại kế thừa trong php.
+> Trong php có 3 loại kế thừa không hỗ trợ đa kế thừa:
+>>- Single Một lớp con chỉ kế thừa từ chỉ một lớp cha.
+>>- Multilevel: Một lớp kế thừa từ một lớp cha, lớp cha lại kế thừa từ lớp
+khác ở trên nó.
+>>- Hierarchical: Một lớp cha có nhiều lớp con với nhiều level khác nhau.
+---
+#### 3.Method overriding.
+>- Method Overriding (ghi đè phương thức) là cơ chế cho phép lớp con định nghĩa lại các phương thức đã được định nghĩa trước đó ở lớp cha.
+>- Phương thức override ở lớp con có cùng tên, cùng danh sách tham số và kiểu dữ liệu trả về so với phương thức ở lớp cha.
+>- Phương thức ở lớp con phải có access modifier có level bằng hoặc cao hơn so với phương thức ở lớp cha.
+>- VD: 
+>> Khai bao class lop cha:
+>>	`Class A {
+		function add($num1,$num2){
+		return $num1 + $num2;
+		}
+	}`
+>> khai báo lớp con:
+	`class B extents A{
+		function add($num1,$num2){
+			return ($num1 + $num2)*2;
+		}
+	}`
+---
+#### 4. method overloading:
+>-Nạp chồng (Overloading): Việc khai báo trong một lớp có nhiều thuộc tính, nhiều phương thức có cùng tên nhưng với các tham số khác nhau (khác kiểu dữ liệu,khác số lượng tham số). 
+> VD:
+>> `class A{
+	function area($width){
+		return $width*$width;
+	}
+	function area($width, $height){
+		return $width*$height;
+	}
+}`
+---
+#### 5. Final.
+>- final class:
+>>Khi một class được khai báo là final thì không lớp nào có thể kế thừa nó và nó chỉ có thể khởi tạo được thôi.
+>>Cú pháp: Khai báo final class.
+>>`final class ClassName
+		{
+    			//code;
+		}`
+>>Khi cố tình khai báo một lớp con sẽ thông báo lỗi fatal error. 
+>- Final Phương thức:
+>>Khi chúng ta khai báo một phương thức là final thì không có một phương thức nào có thể override(ghi đè lại được).
+>>Cú pháp: khai báo một phương thức final.
+>>`class ClassName
+		{
+   			 final public function methodName()
+    			{
+       			 //
+   			}
+		}`
+---
+#### 6. Hàm khởi tạo.
+>- Hàm khởi tạo cũng là một hàm bình thường nhưng có điểm đặc biệt là nó luôn luôn được gọi tới khi ta khởi tạo một đối tượng.
+>- Hàm khởi tạo có thẻ có tham số hoặc không có tham số, có thể có giá trị trả về hoặc không.
+
+>- Hàm khởi tạo trong kế thừa:
+>>+ TH1: Nếu lớp Con có hàm khởi tạo và lớp cha cũng có hàm khởi tạo thì hàm khởi tạo của lớp con sẽ được chạy, còn hàm khởi tạo ở lớp cha không được chạy.
+>>+ TH2: Nếu lớp con không có hàm khởi tạo, lớp Cha có hàm khởi tạo thì hàm khởi tạo ở lớp cha sẽ được chạy.
+>>+ TH3: Nếu lớp Con có hàm khởi tạo, lớp cha không có hàm khởi tạo thì hàm khởi tạo lớp con sẽ được chạy.
+>- Trong PHP, hàm khởi tạo không cho phép chúng ta thực hiện việc overload, nó chỉ cho phép khởi tạo 1 đối tượng duy nhất ứng với method `__contructs()` được khai báo trong class(không khai báo mặc định là không truyền gì).
+>
+>- Trong PHP có hai cách khai báo tên hàm khởi tạo. 
+>>+ Cách thứ nhất là khai báo tên trùng với tên lớp: 
+>>`class SinhVien
+		{
+   			function SinhVien() {
+        			echo 'Lớp Sinh Viên vừa được khởi tạo';
+   			}
+		}`
+>>+ Cách thứ hai là khai báo với tên (_ _construct).
+>>`class SinhVien
+		{
+		    function __construct() {
+			echo 'Lớp Sinh Viên vừa được khởi tạo';
+		    }
+		}`
+>
+---
 # reflection lesson 4 ngày 28-1-2021
 ***
 <dl>
