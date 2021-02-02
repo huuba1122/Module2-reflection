@@ -1,5 +1,88 @@
 # Module2-reflection
 ***
+## Reflection  2/2/2021.
+----
+#### 1. clean code.
+> clean code là những thuật ngữ chỉ những mã nguồn tốt.
+>
+> 1.1.Mã nguồn tốt là :
+>> - Đơn giản (giải quyết vấn đề một cách ngắn gọn).
+>> - Trực tiếp ( giải quyết vấn đề chính xác không lòng vòng).
+>> - Dễ đọc.
+>> - Dễ cải tiến.
+>> - Các định danh thể hiện rõ nghĩa.
+>> - Không có mã bị trùng lặp.
+>> - Thể hiện được ý tưởng thiết kế.
+>
+> 1.2.Mục đích :
+>> - Giúp ích cho việc cộng tác nhóm.
+>> - Dễ dàng hơn cho việc thực hiện thay đổi mở rộng sản phẩm.
+>
+> 1.3.Các cách thực hành clean code.
+>> - Áp dụng coding conventions trong việc đặt tên (biến, hàm, class), số lượng (dòng trong một hàm, số kí tự trong một dòng, số hàm trong một class,..), sử dụng comment, thực hiện xuống dòng..
+>> - Sử dụng nguyên lý SOLID.
+>> - Sử dụng Seperation of Concern và các mô hình phổ biến như MVC, MVVM để phân tách code thành nhiều thành phần nhỏ, dễ quản lý.
+>> - Áp dụng design pattern để giải quyết các vấn đề trong code.
+>
+> 1.4. Nguyên lý SOLID.
+>Hiểu một cách đơn giản SOLID là 5 nguyên lý giúp lập trình viên phát triền phần mềm với kiến trúc tốt 
+>> - Single responsibility principle  là một class chỉ nên thực hiện một nhiệm vụ.
+>> - Open/closed principle là Có thể thoải mái mở rộng 1 class, nhưng không được sửa đổi bên trong class đó tức là mỗi khi ta muốn thêm chức năng,.. cho chương trình, chúng ta nên viết class mới mở rộng class cũ ( bằng cách kế thừa hoặc sở hữu class cũ) không nên sửa đổi class cũ.
+>> - Liskov Substitution Principle là trong một chương trình, các object của class con có thể thay thế class cha mà không làm thay đổi tính đúng đắn của chương trình
+>> - Interface Segregation Principle là thay vì dùng 1 interface lớn, ta nên tách thành nhiều interface nhỏ, với nhiều mục đích cụ thể.
+>> - Dependency inversion principle là các module cấp cao không nên phụ thuộc vào các modules cấp thấp và Interface (abstraction) không nên phụ thuộc vào chi tiết, mà ngược lại. (phần này hơi triết học).
+>
+#### 2. Refactoring.
+> 2.1.Khái nieemj: Là việc thay đổi cấu trúc bên trong mà không làm thay đổi hành vi với bên ngoài hệ thống.
+>
+> 2.2.Các mức độ thực hiện: 
+>> - Hệ thống.
+>> - Chức năng.
+>> - File/class.
+>> - Method/function.
+>> -> tùy theo mức độ mà cấu trúc bên trong hay hành vi bên ngoài sẽ được hiểu khác nhau
+>>VD: Refactoring class thì cấu trúc bên trong ở đây là các method và property còn hành vi bên ngoài là nhiệm vụ class đó thực hiện như vậy việc refactoring class là viết lại các thuộc tính và phương thức sao cho không làm thay đổi nhiệm vụ của class đó.
+>
+>2.3.Khi nào thì thực hiện refactoring:
+>> - Thêm chức năng mới vào source code cũ thì đây là thời điểm đọc lại source code cũ để hiểu và thêm vào một phần mới có thể phần mới này sẽ ảnh hưởng đến phần cũ thì đây là thời điểm thích hợp để refactoring.
+>> - Khi tiến hành review code
+>> - Khi cần handover (bàn giao code).
+>
+#### 3. coding conventions.
+>3.1.Khái niệm :
+>> Là những tập hợp các quy tắc chung khi lập trình nhằm làm code dễ đọc dễ hiểu do đó dễ quản lý và bảo trì.
+>3.2.Một số quy tắc :
+>3.2.1. Quy tắc đặt tên :
+>> - Tên class theo PascalCase và là một danh từ hoặc cụm danh từ
+>> - Tên biến theo camelCase hoặc snack_case dùng các danh từ hoặc cụm danh từ, tính từ (isNumber).
+>> - Tên hàm theo camelCase hoặc snack_case dùng các động từ để bắt đầu.
+>> - Tên hằng thì đặt theo UPPER_CASE (tất cả ký tự đều viết hoa).
+>> - Tên phải có nghĩa không viết tắt.
+>> - Tránh đặt tên chung chung tối nghĩa hoặc có những ký tự gây nhẫm lẫn.
+>3.2.2. Quy tắc về số lượng :
+>> - Hàm thì không quá 30 dòng.
+>> - Lớp thì không nên quá 500 dòng.
+>> - Một hàm thì không nên quá 5 tham số.
+>> - Một hàm thì chỉ nên làm duy nhất một việc.
+>> - Khi khai báo biến thì một dòng chỉ chứa một biến.
+>> - Một dòng không nên quá 80 ký tự.
+>> - Câu lệnh lồng nhau thì tối đa 4 cấp.
+>3.2.3. Quy tắc xuống hàng.
+>> - Xuống hàng sau dấu phẩy "," hoặc trước các toán từ.
+>> - Những cấp lồng nhau thì theo từng cấp.
+>3.2.4. Comment.
+>> - Hạn chế dùng comment để giải thích code mà hãy cải thiện đoạn code của mình.
+>> - Chỉ dùng comment khi viết documentation cho thư viện, thông tin đính kèm cho class.
+
+
+
+
+
+
+
+
+
+
 # Reflection 1/2/2021.
 ***
 #### 1.Abstract Class.
