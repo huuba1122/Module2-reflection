@@ -42,7 +42,7 @@
 >> - Method/function.
 >
 > Tùy theo mức độ mà cấu trúc bên trong hay hành vi bên ngoài sẽ được hiểu khác nhau
-> VD: Refactoring class thì cấu trúc bên trong ở đây là các method và property còn hành vi bên ngoài là nhiệm vụ class đó thực hiện như vậy việc refactoring class là viết lại các thuộc tính và phương thức sao cho không làm thay đổi nhiệm vụ của class đó.
+>> - VD: Refactoring class thì cấu trúc bên trong ở đây là các method và property còn hành vi bên ngoài là nhiệm vụ class đó thực hiện như vậy việc refactoring class là viết lại các thuộc tính và phương thức sao cho không làm thay đổi nhiệm vụ của class đó.
 >
 >2.3.Khi nào thì thực hiện refactoring:
 >> - Thêm chức năng mới vào source code cũ thì đây là thời điểm đọc lại source code cũ để hiểu và thêm vào một phần mới có thể phần mới này sẽ ảnh hưởng đến phần cũ thì đây là thời điểm thích hợp để refactoring.
@@ -51,7 +51,8 @@
 >
 #### 3. coding conventions.
 >3.1.Khái niệm :
->> Là những tập hợp các quy tắc chung khi lập trình nhằm làm code dễ đọc dễ hiểu do đó dễ quản lý và bảo trì.
+>> - Là những tập hợp các quy tắc chung khi lập trình nhằm làm code dễ đọc dễ hiểu do đó dễ quản lý và bảo trì.
+>
 >3.2.Một số quy tắc :
 >3.2.1. Quy tắc đặt tên :
 >> - Tên class theo PascalCase và là một danh từ hoặc cụm danh từ
@@ -60,6 +61,7 @@
 >> - Tên hằng thì đặt theo UPPER_CASE (tất cả ký tự đều viết hoa).
 >> - Tên phải có nghĩa không viết tắt.
 >> - Tránh đặt tên chung chung tối nghĩa hoặc có những ký tự gây nhẫm lẫn.
+>
 >3.2.2. Quy tắc về số lượng :
 >> - Hàm thì không quá 30 dòng.
 >> - Lớp thì không nên quá 500 dòng.
@@ -68,9 +70,11 @@
 >> - Khi khai báo biến thì một dòng chỉ chứa một biến.
 >> - Một dòng không nên quá 80 ký tự.
 >> - Câu lệnh lồng nhau thì tối đa 4 cấp.
+>
 >3.2.3. Quy tắc xuống hàng.
 >> - Xuống hàng sau dấu phẩy "," hoặc trước các toán từ.
 >> - Những cấp lồng nhau thì theo từng cấp.
+>
 >3.2.4. Comment.
 >> - Hạn chế dùng comment để giải thích code mà hãy cải thiện đoạn code của mình.
 >> - Chỉ dùng comment khi viết documentation cho thư viện, thông tin đính kèm cho class.
