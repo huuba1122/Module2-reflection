@@ -54,6 +54,7 @@
 >> - Là những tập hợp các quy tắc chung khi lập trình nhằm làm code dễ đọc dễ hiểu do đó dễ quản lý và bảo trì.
 >
 >3.2.Một số quy tắc :
+>
 >3.2.1. Quy tắc đặt tên :
 >> - Tên class theo PascalCase và là một danh từ hoặc cụm danh từ
 >> - Tên biến theo camelCase hoặc snack_case dùng các danh từ hoặc cụm danh từ, tính từ (isNumber).
