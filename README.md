@@ -34,14 +34,38 @@
 #### 2. ArrayList.
 > 2.1 Khái niệm. 
 >> - Là một cấu trúc dữ liệu danh sách sử dụng mảng để lưu trữ dữ liệu.
+>
 > 2.2.Đặc điểm.
 >> - Truy xuất nhanh đến các phần tử (truy xuất theo index).
 >> - Các thao tác thêm sửa xóa không hiệu quả vì phải dịch chuyển lại các phần tử của mảng.
+>
 > 2.3. Hoạt động.
 >> - Thêm, sửa, xóa, tìm kiếm, duyệt..
 ---
 #### 3. Linked List
-> 3.1 Kh
+>
+> 3.1 Khái niệm.
+>> - Là cấu trúc dữ liệu danh sách chứa các phần tử trong đó mỗi phần tử liên kết với phần tử tiếp theo của nó.
+>> - Mỗi phần tử bao gồm : Trường dữ liệu chứa giá trị thực sẽ được lưu trữ, xử lý và Trường liên kết giữ địa chỉ mục dữ liệu tiếp theo trong danh sách liên kết.
+>
+> 3.2. Đặc điểm.
+>
+>- Ưu điểm.
+>> - Thao tác thêm xóa phần tử nhanh hơn loại Array list vì chỉ cần xác định phần tử trước đó và phần tử sau nó sau đó xóa trường liên kết của nó và cho trường liên kết của phần tử trước nó trỏ đến phần tử sau nó là xong.
+>> - Tốn ít tài nguyên bộ nhớ.
+> - Nhược điểm.
+>> - vì các phần tử liên kết với nhau thành chuỗi như thế nên việc tìm kiếm một phần tử bất kỳ cũng đều phải duyệt từ phần tử đầu tiên trở đi làm mất nhiều thời gian
+>
+> 3.3. Các loại linked List.
+>> - Simple linked list chỉ duyệt các phần tử theo chiều về phía trước tức là các phần tử phía trước chỉ trỏ đến thằng sau nó.
+>> - Double linked list các phần tử có thể duyệt cả về trước lẫn về sau do các phần tử đều trở về cả phần tử trước nó và cả phần tử sau nó.
+>> - Circular linked list phần tử cuối cùng thì trỏ về phần tử đầu tiên.
+>
+> 3.4. Các hoạt động.
+>> - Thêm 1 phần tử.
+>> - Xóa một phần tử.
+>> - Duyệt.
+>> - Tìm kiếm.
 
 
 ---
