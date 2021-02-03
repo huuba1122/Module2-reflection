@@ -1,5 +1,50 @@
 # Module2-reflection
 ***
+## Reflection 3/2/2021.
+---
+#### 1. Cấu trúc dữ liệu (data structures):
+> 1.1. Khái niệm :
+>> - là hình thức tổ chức dữ liệu để sử dụng một cách hiệu quả.
+>
+> 1.2. Chức năng :
+>> - Lữu trữ dữ liệu.
+>> - Cung cấp các phương thức để thao tác với dữ liệu.
+>
+> 1.3. Thành phần chính trong một cấu trúc dữ liệu.
+>> - Container: là lớp chứa dữ liệu và cung cấp các phương thức để thao tác với dữ liệu.
+>> - Elements là các phần tử của dữ liệu.
+>
+> 1.4. Khi nào dùng và dùng như thế nào.
+>> -  Tùy vào yêu cầu của mỗi bài toán mà có những cách chọn cấu trúc dữ liệu khác nhau.
+>
+> 1.5. Tại sao phải dùng.
+>> - Liên quan đến hiệu năng của hệ thống.
+>> - VD: khi dữ liệu chứa cả triệu thông tin sản phẩm và các khách hàng search theo tên một sản phẩm bất kỳ với một số lượng thông tin lớn như thế làm sao để trả về sản phẩm mà khách hàng muốn tìm kiếm trong thời gian cho phép. Như vậy nếu việc cấu trúc dữ liệu của mình tốt thì mất ít thời gian trả về hơn so với một cấu trúc dữ liệu chưa tốt.
+>
+>1.6. Một số loại cấu trúc dữ liệu thông dụng.
+>> - Set nhóm phần tử không trùng nhau.
+>> - List Nhóm các phần tử có thể trùng nhau.
+>> - Stack Nhóm các phần tử theo trật tự vào trước ra sau.
+>> - Queue Nhóm các phần tử theo trật tự vào trước ra trước
+>> - Map Lưu dữ liệu theo cặp key - Value.
+>> - Tree Lưu dữ liệu theo quan hệ cha con
+>> - Grap lưu dữ liệu theo quan hệ mạng lưới.
+
+---
+#### 2. ArrayList.
+> 2.1 Khái niệm. 
+>> - Là một cấu trúc dữ liệu danh sách sử dụng mảng để lưu trữ dữ liệu.
+> 2.2.Đặc điểm.
+>> - Truy xuất nhanh đến các phần tử (truy xuất theo index).
+>> - Các thao tác thêm sửa xóa không hiệu quả vì phải dịch chuyển lại các phần tử của mảng.
+> 2.3. Hoạt động.
+>> - Thêm, sửa, xóa, tìm kiếm, duyệt..
+---
+#### 3. Linked List
+> 3.1 Kh
+
+
+---
 ## Reflection  2/2/2021.
 ----
 #### 1. clean code.
