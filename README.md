@@ -1,5 +1,31 @@
 # Module2-reflection
 ***
+## Reflection 5/2/2021.
+---
+> 1. Standard php library - SPL.
+>
+> 1.1. Khái niệm. 
+>
+>> - Là bộ thư viện chuẩn của PHP nhằm giải quyết các bài toán phổ biến.
+>
+> 1.2. Bao gồm.
+>
+>> - Perdifined constants Danh sách hằng số.
+>> - Datastructures : Các cấu trúc dữ liệu khác nhau như LinkedList, Stack, Queue, Map....
+>> - Interface : danh sách các Interface.
+>> - Iterator : Các lớp có khả năng thực hiện phép lặp để duyệt qua các cấu trúc khác nhau.
+>> - Exceptions : Danh sách lớp điều khiển ngoại lệ.
+>> - File handling : Cung cấp các lớp làm việc với file hệ thống.
+>> - Spl function : Các hàm hỗ trợ cần thiết.
+>
+> 2. Class SplDoublyLinkedList.
+>
+> 2.1. Khái niệm :
+>> - cung cấp các chức năng chính của một danh sách liên kết đôi
+>> - cung cấp các hàm để làm việc và thao tác với dữ liệu.
+
+
+---
 ## Reflection 4/2/2021.
 ---
 #### 1. Stack.
