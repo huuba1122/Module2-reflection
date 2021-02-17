@@ -6,7 +6,7 @@
 >
 >1.1. Khái niệm.
 >
->> - Tìm kiếm tuyến tính là hoạt động tìm kiếm liên tiếp được diễn ra qua tất cả từng phần tử. Mỗi phần tử đều được kiểm tra và trả về kết quả nếu tìm thấy phần tử đó nếu không thấy thì tìm kiếm đến hết dữ liệu.
+> - Tìm kiếm tuyến tính là hoạt động tìm kiếm liên tiếp được diễn ra qua tất cả từng phần tử. Mỗi phần tử đều được kiểm tra và trả về kết quả nếu tìm thấy phần tử đó nếu không thấy thì tìm kiếm đến hết dữ liệu.
 >
 >1.2. Đặc điểm.
 >
@@ -17,7 +17,7 @@
 >
 >2.1. Khái niệm.
 >
->> - Binary search tìm kiếm một phần tử cụ thể bằng cách so sánh phần tử tại vị trí giữ nhất của tập dữ liệu. Nếu tìm thấy thì trả về kết quả chỉ mục của phần tử đó. Nếu phần tử cần tìm lớn hơn phần tử gìữa thì phần tử cần tìm nằm bên mảng con bên phải của phần tử giữa, nếu không thì sẽ tìm ở trong mảng con nằm ở bên trái phần tử giữa. Quá trình lặp lại cho đến khi tìm hết mọi phần tử trên mảng con này.
+> - Binary search tìm kiếm một phần tử cụ thể bằng cách so sánh phần tử tại vị trí giữ nhất của tập dữ liệu. Nếu tìm thấy thì trả về kết quả chỉ mục của phần tử đó. Nếu phần tử cần tìm lớn hơn phần tử gìữa thì phần tử cần tìm nằm bên mảng con bên phải của phần tử giữa, nếu không thì sẽ tìm ở trong mảng con nằm ở bên trái phần tử giữa. Quá trình lặp lại cho đến khi tìm hết mọi phần tử trên mảng con này.
 >
 >2.2. Đặc điểm.
 >
