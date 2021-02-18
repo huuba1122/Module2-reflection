@@ -1,5 +1,42 @@
 # Module2-reflection
 ***
+## Reflection 18/2/2021.
+---
+1.Giải thuật sắp xếp.
+>
+>- Giải thuật sắp xếp là xác định cách sắp xếp dữ liệu theo một thứ tự nào đó. Sắp xếp theo thứ tự ở đây là sắp xếp theo thứ tự dạng số hoặc dạng chữ cái.
+>- Giải thuật sắp xếp có tác dụng cho việc tối ưu tìm kiếm dữ liệu và sử dụng để biểu diễn dữ liệu dễ đọc hơn.
+>
+>1.1.giải thuật sắp xếp In-place và not-in-place.
+>
+>>- Những giải thuật mà không yêu cầu thêm bộ nhớ phụ và việc sắp xếp được tiến hành trong bộ nhó đã khai báo trước đó thì được gọi là In-place (vd: bubble sort, Insertion sort, selection sort).
+>>- Những giải thuật cần thêm bộ nhớ mà có thể lớn hơn hoặc bằng với số phần tử đang được sắp xếp thì gọi là not-in-place sorting (VD: merge sort).
+>
+>1.2.Giải thuật sắp xếp cố định và sắp xếp so sánh.
+>
+>>- Sau khi sắp xếp những phần tử có giá trị bằng nhau mà vị trí tương đối giữa chúng không thay đổi là sắp xếp cố định. và ngược lại thay đổi vị trí tương đối của 2 phần tử có giá trị bằng nhau thì là sắp xếp so sánh.
+>
+>1.3. Giải thuật sắp xếp Adaptive và Non-adaptive.
+>
+>>- khi sắp xếp nếu danh sách ban đầu có một số phần tử đã được sắp xếp, thì giải thuật dạng adaptive sẽ ghi nhận các phần tử này và sẽ cố gắng không thay đổi thứ tự của chúng.
+>>- giải thuật dạng non-adaptive sẽ không ghi nhận các phần tử đã được sắp xếp trước đó. Giải thuật loại này sẽ vấn cố gắng sắp xếp lại từng phần tử trong danh sách ban đầu.
+>
+2. Bubble Sort (sắp xếp nổi bọt).
+>
+>-Giải thuật sắp xếp này được tiến hành dựa trên việc so sánh cặp phần tử liền kề nhau và tráo đổi thứ tự nếu chúng không theo thứ tự.
+>-Giải thuật này không thích hợp sử dụng với các tập dữ liệu lớn khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là Ο(n2) với n là số phần tử.
+>
+3. Insertion Sort (sắp xếp chèn).
+>
+>-Với cấu trúc dữ liệu mảng, chúng ta tưởng tượng là: mảng gồm hai phần: một danh sách con đã được sắp xếp và phần khác là các phần tử không có thứ tự. Giải thuật sắp xếp chèn sẽ thực hiện việc tìm kiếm liên tiếp qua mảng đó, và các phần tử không có thứ tự sẽ được di chuyển và được chèn vào vị trí thích hợp trong danh sách con (của cùng mảng đó).
+> - Giải thuật này không thích hợp sử dụng với các tập dữ liệu lớn khi độ phức tạp trường hợp xấu nhất và trường hợp trung bình là Ο(n2) với n là số phần tử.
+> 
+4. Selection Sort ( Sắp xếp chọn).
+> 
+> - Danh sách được chia thành hai phần, phần được sắp xếp (sorted list) ở bên trái và phần chưa được sắp xếp (unsorted list) ở bên phải.Phần tử nhỏ nhất được lựa chọn từ danh sách chưa được sắp xếp và được tráo đổi với phần bên trái nhất và phần tử đó trở thành phần tử của danh sách được sắp xếp. Tiến trình này tiếp tục cho tới khi toàn bộ từng phần tử trong danh sách chưa được sắp xếp đều được di chuyển sang mảng đã được sắp xếp.
+> - Giải thuật này không phù hợp với tập dữ liệu lớn khi mà độ phức tạp trường hợp xấu nhất và trường hợp trung bình là O(n2) với n là số phần tử.
+> 
+---
 ## Reflection 17/2/2021.
 ---
 1. Tìm kiếm tuyến tính (Linear Search).
