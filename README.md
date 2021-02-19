@@ -1,5 +1,58 @@
 # Module2-reflection
 ***
+## Reflection 19/2/2021.
+---
+#### Xử lý ngoại lệ.
+---
+1.Khái niệm.
+>
+> - Xử lý ngoại lệ được sử dụng để thay đổi luồng chương trình khi xảy ra một lỗi bất thường mà người lập trình không kiểm soát được.
+> - VD:
+>> - Không tìm thấy file cần mở.
+>> - Kết nối mạng bị ngắt trong quá trình thực hiện thao tác.
+>> - Nhập dữ liệu không hợp lệ.
+>> - Tràn bộ nhớ.
+>> - Truy cập ngoài chỉ số của mảng.
+>> - ...
+>
+2. Exception.
+>
+> - Là một giải pháp quản lý lỗi kiểu hướng đối tượng.
+> - Là một lớp có sẵn trong PHP.
+> - chứa thông tin về nơi xảy ra lỗi.
+> - Một số hàm trong Exception.
+>> - getMessage() : Hiển thị tin nhắn ngoại lệ
+>> - getCode() : Hiển thị các mã số là đại diện của các loại ngoại lệ.
+>> - getFile() : Hiển thị tên các tập tin và đường dẫn nơi xảy ra ngoại lệ.
+>> - getLine() : Hiển thị các dòng xảy ra ngoại lệ.
+>> - toString(): Hiển thị toàn bộ ngoại lệ như một chuỗi.
+>
+3. Lớp ngoại lệ tùy chỉnh.
+>
+> - Là một đặc biệt với các hàm có thẻ được gọi khi một ngoại lệ xảy ra trong php. Lớp này kế thừa từ lớp Exception.
+> - Lớp ngoại lệ tùy chỉnh kế thừa các thuộc tính từ lớp Exception của PHP và có thể thêm các hàm tùy chỉnh vào nó.
+> - Mục Đích.
+> 
+>> - thay đổi nội dung thông báo.
+>> - Thông báo một nghiệp vụ đang bị lỗi được chỉ định trước.
+>
+4. Sử dụng try - throw - catch để xử lý ngoại lệ.
+>
+> - try: chứa đoạn mã có khả năng xảy ra ngoại lệ. Nếu không có ngoại lệ xảy ra thì mã tiếp tục chạy như bình thường. Tuy nhiên nếu có xảy ra ngoại lệ thì mộ ngoại lệ sẽ bị ném ra bằng từ khóa throw.
+> - throw: Ngoại lệ được kích hoạt. Mỗi throw phải bao gồm ít nhất một khối catch.
+> - catch: lấy ra một ngoại lệ và tạo ra một đối tượng chứa thông tin ngoại lệ. và trong khối catch ta có thể viết chương trình xử lý ngoại lệ đó.
+> - cú pháp.
+> 
+		try 
+		{
+		    //Khối lệnh mà có thể phát sinh Exception
+		} 
+		catch (Exception $e) 
+		{    
+		    //Khối lệnh bắt được Exception
+		}
+>
+---
 ## Reflection 18/2/2021.
 ---
 1.Giải thuật sắp xếp.
