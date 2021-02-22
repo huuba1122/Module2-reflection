@@ -1,5 +1,28 @@
 # Module2-reflection
 ***
+## Reflection 22/2/2021.
+---
+### Biểu thức chính quy (regular Expression).
+---
+1. Khái niệm.
+>
+> - Miêu tả một chuỗi theo những quy tắc cú pháp nhất định.
+> - là biểu thức được sử dụng để chỉ định một chuỗi các chuỗi cần thiết cho một mục đích cụ thể.
+> 
+2. Tác dụng.
+>
+> - Tìm kiếm và thay thế một chuỗi con trong một chuỗi lớn.
+> - Xác thực form (validate form).
+> - Tiết kiệm thời gian lập trình.
+>
+3. Một số hàm thao tác với biểu thức chính quy trong php.
+>
+> - preg_match() : được dùng để kiểm tra, so khớp và lấy kết quả của việc so sánh chuỗi dựa vào biểu thức chính quy.
+> - preg_match_all(): cũng tương tự hàm preg_match() ở trên , tuy nhiên hai hàm này khác nhau ở chỗ , hàm preg_match_all() sẽ trả về toàn bộ các giá trị được so sánh khớp, còn hàm preg_match() chỉ trả về giá trị đầu tiên được so sánh khớp.
+> - pre_split: để chia nhỏ chuỗi thành mảng chứa các chuỗi con. 
+> - preg_replace dùng để tìm kiếm và thay thế một chuỗi nào đó khớp với đoạn Regular Expression truyền vào. 
+> 
+---
 ## Reflection 19/2/2021.
 ---
 #### Xử lý ngoại lệ.
