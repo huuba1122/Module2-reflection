@@ -36,8 +36,9 @@
 > - Hệ quản trị cơ sở dữ liệu quan hệ là hệ thống quản lý cơ sở dữ liệu dựa trên mô hình quan hệ hay hệ quản trị CSDL dùng để tạo lập, cập nhật và khai thác CSDL quan hệ là hệ quản trị CSDL quan hệ.
 > 
 #### 3. SQL (structured query language).
-> - Ngôn ngữ truy vấn có cấu trúc là một loại ngôn ngữ máy tính để thao tác với h
-
+> - Ngôn ngữ truy vấn có cấu trúc là một loại ngôn ngữ máy tính để thao tác với hệ quản trị cơ sở dữ liệu quan hệ (RDBMS).
+> 
+---
 ## Reflection 22/2/2021.
 ---
 ### Biểu thức chính quy (regular Expression).
