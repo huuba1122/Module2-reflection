@@ -1,5 +1,43 @@
 # Module2-reflection
 ***
+---
+## Reflection 23/2/2021.
+---
+#### 1. Cơ sở dữ liệu (database)
+1.1 Khái niệm.
+> - Cơ sở dữ liệu là một tập hợp các dữ liệu có tổ chức, thường được lưu trữ và truy cập từ hệ thống máy tính.
+>
+1.2. Mô hình dữ liệu.
+>
+> - Là cơ chế lưu trữ quản lý và truy vấn dữ liệu.
+> - Một số mô hình.
+> 
+>> - CSDL phân cấp 
+>> - CSDL mạng.
+>> - CSDL đồ thị.
+>> - CSDL quan hệ.
+>> - CSDL đối tượng.
+>> - ...
+>
+#### 2. Hệ quản trị cơ sở dữ liệu (Database Management System - DBMS).
+2.1. Khái niệm.
+> - là phần mềm để quản lý cơ sở dữ liệu.
+> 
+2.2. Chức năng.
+>
+> -Các DBMS hiện tại cung cấp các chức năng khác nhau cho phép quản lý cơ sở dữ liệu và dữ liệu có thể được phân loại thành bốn nhóm chức năng chính: 
+>> - Định nghĩa dữ liệu: xác định kiểu, ràng buộc của dữ liệu.
+>> - Cập nhật dữ liệu : Chèn, sửa đổi và xóa dữ liệu thực tế.
+>> - Truy xuất : Cung cấp thông tin dữ liệu dưới dạng có thể sử dụng trực tiếp hoặc để xử lý thêm bởi các ứng dụng khác.
+>> - Quản lý dữ liệu : Bảo mật dữ liệu, theo dõi, sao lưu và có thể khôi phục thông tin đã bị hỏng do lỗi.
+>
+2.3. Hệ quản trị cơ sở dữ liệu quan hệ (RDBSM).
+> 
+> - Hệ quản trị cơ sở dữ liệu quan hệ là hệ thống quản lý cơ sở dữ liệu dựa trên mô hình quan hệ hay hệ quản trị CSDL dùng để tạo lập, cập nhật và khai thác CSDL quan hệ là hệ quản trị CSDL quan hệ.
+> 
+#### 3. SQL (structured query language).
+> - Ngôn ngữ truy vấn có cấu trúc là một loại ngôn ngữ máy tính để thao tác với h
+
 ## Reflection 22/2/2021.
 ---
 ### Biểu thức chính quy (regular Expression).
