@@ -1,5 +1,60 @@
 # Module2-reflection
 ***
+## Reflection 24/2/2021.
+---
+#### Thiết kế và tạo cơ sở dữ liệu.
+1 Mục đích :
+>
+> - Tìm ra một mô hình CSDL phù hợp với yêu cầu của khách hàng.
+> 
+2 Các bước thực hiện.
+>
+> - b1: Xác định mục đích của CSDL.
+> - b2: Tìm hiểu và tổ chức các thông tin cần lưu trữ.
+> - b3: chia thông tin vào trong các bảng.
+> - b4: Xác định trường dữ liệu của từng bảng.
+> - b5: Khóa chính của các bảng.
+> - b6: Mối quan hệ giữa các bảng.
+> - b7: Làm mịn thiết kế.
+> - b8: Áp dụng các quy tắc chuẩn hóa.
+> 
+3. Khóa chính (Primary key).
+>
+> - Dùng để xác định mẫu tin trong bảng là duy nhất.
+> - Mỗi bảng chỉ tồn tại duy nhất một khóa chính.
+> - Mỗi khóa chính có thể là một hay một nhóm các trường.
+> - Giá trị khóa chính không được phép để null và giá trị đó là duy nhất trong bảng.
+> 
+4. Khóa ngoại (foreign key). 
+>
+> - Là tập hợp các thuộc tính trong bảng tham chiếu đến bảng khác.
+> - bảng chứa khóa ngoại là bảng con còn bảng nó tham chiếu đến nó là bảng cha.
+> - Giá trị của khóa ngoại nó cùng kiểu, cùng độ dài, cùng giá trị với cột của bảng nó tham chiếu đến.
+> 
+5. CHuẩn hóa dữ liệu.
+>
+5.1. Khái niệm.
+>
+> - Là kỹ thuật thiết kế CSDL tổ chức vào các bảng theo cách làm giảm dư thừa và phụ thuộc vào dữ liệu.
+> 
+5.2. Quy tắc 1NF.
+>
+> - Mỗi ô bảng chứa giá trị là nguyên tử (tức là không chia nhỏ hơn nữa).
+> - Mỗi bản ghi trong bảng là duy nhất.
+> - Không có giá trị của thuộc tính nào có thể tính toán được từ giá trị của thuộc tính khác.
+>
+5.3. Quy tắc 2NF.
+> 
+> - Phải là 1NF.
+> - Loại bỏ những thuộc tính không khóa phụ thuộc vào một bộ phận khóa chính và tách chúng ra một bảng riêng có khóa chính là khóa mà chúng phụ thuộc vào.
+> 
+5.4. Quy tắc 3NF.
+>
+> - Phải là 2NF.
+> - Không có phụ thuộc chức năng bắc cầu tức là khi thay đổi một cột không khóa thì không có cột nào trong bảng giá trị bị thay đổi.
+> 
+
+
 ---
 ## Reflection 23/2/2021.
 ---
