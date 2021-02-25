@@ -1,5 +1,34 @@
 # Module2-reflection
 ***
+## Reflection 25/2/2021.
+---
+#### Một số câu lệnh truy vấn trong SQL với MySQL.
+---
+1.1 And và OR.
+>
+>- Toán tử AND trả về false nếu một trong hai biểu thức kết hợp được đánh giá là sai. 
+>> - cú pháp: WHERE boolean_expression_1 AND boolean_expression_2
+>
+>- Toán tử OR kết hợp hai hay nhiều biểu thức dạng boolean, chỉ cần một trong các điều kiện kết hợp là đúng thì kết quả là true. 
+>> - cú pháp: WHERE boolean_expression_1 OR boolean_expression_2
+>
+1.2. Group by và mệnh đề HAVING.
+>
+>- mệnh đề group by là một phần không bắt buộc của câu lệnh SELECT, được sử dụng để nhóm các tập các hàng có cùng một giá trị vào thành một nhóm, mỗi nhóm đó chỉ trả về một hàng.
+>> - cú pháp : SELECT column1 FROM table-name GROUP BY column1;
+>
+>- Mệnh đề HAVING thay cho WHERE để hạn chế dữ liệu trả về trong tập kết quả. Mệnh đề WHERE dùng với các cột của bảng, tuy nhiên không dùng được với các hàm tập hợp. Mệnh đề HAVING dùng với các hàm tập hợp và đi sau GROUP BY.
+>> - Cú pháp : SELECT columnname(s) FROM tablename WHERE conditional GROUP BY column... HAVING conditional
+>
+1.3. JOIN.
+>
+>- Mệnh đề JOIN được sử dụng để kết hợp các hàng từ hai hay nhiều bảng, dựa trên cột liên quan giữa chúng. JOIN gồm 3 loại cơ bản INNER JOIN, LEFT JOIN, RIGHT JOIN trong MySQL không hỗ trợ FULL JOIN.
+>> - cú pháp : SELECT column_name(s) FROM table1 INNER|LEFT|RIGHT JOIN table2 ON join_condition1 INNER|LEFT|RIGHT  JOIN table3 ON join_condition2 … WHERE conditions;
+>- INNER JOIN khớp các hàng trong một bảng với các hàng trong các bảng khác và cho phép bạn truy vấn các hàng có chứa các cột từ cả hai bảng. 
+>- LEFT JOIN cho phép bạn chọn các hàng từ cả hai bảng bên trái và bên phải khớp với tất cả các hàng từ bảng bên trái (table1) ngay cả khi không có kết quả tìm thấy trong bảng bên phải (table2).
+>- RIGHT JOIN cho phép bạn chọn các hàng từ cả hai bảng bên trái và bên phải khớp với tất cả các hàng từ bảng bên phải (table2) ngay cả khi không có kết quả tìm thấy trong bảng bên phải (table1).
+>
+---
 ## Reflection 24/2/2021.
 ---
 #### Thiết kế và tạo cơ sở dữ liệu.
