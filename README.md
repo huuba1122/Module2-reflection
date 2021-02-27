@@ -1,5 +1,41 @@
 # Module2-reflection
 ***
+## Reflection 26/2/2021.
+#### Một số hàm thao tác với dữ liệu trong SQL.
+---
+1. Count()
+>
+>- Hàm COUNT() trả về số bản ghi phù hợp với tiêu chí đã chỉ định.
+>-  cú pháp :
+>>- SELECT COUNT(tên_cột) FROM tên_bảng WHERE điều_kiện;
+>
+2. AVG().
+>
+>- Hàm AVG() trả về giá trị trung bình của một cột số.
+>- cú pháp : 
+>> -SELECT AVG(tên_cột) FROM tên_bảng WHERE điều_kiện;
+>
+3. SUM()
+>
+>- Hàm SUM() trả về tổng số của một cột số.
+>- cú pháp:
+>>- SELECT SUM(tên_cột) FROM tên_bảng WHERE điều_kiện;
+>
+4. MIN().
+>
+>- Hàm MIN() trả về giá trị nhỏ nhất của cột đã chọn.
+>- Cú pháp:
+>>- SELECT MIN(tên_cột) FROM tên_bảng WHERE điều_kiện;
+>
+5. MAX()
+>
+>- Hàm MAX() trả về giá trị lớn nhất của cột được chọn.
+>- cú pháp:
+>>- SELECT MAX(tên_cột) FROM tên_bảng WHERE điều_kiện;
+
+
+
+----
 ## Reflection 25/2/2021.
 ---
 #### Một số câu lệnh truy vấn trong SQL với MySQL.
