@@ -1,5 +1,71 @@
 # Module2-reflection
 ***
+## Reflection 1/3/2021.
+#### View.
+1. Khái niệm.
+>
+>-  View là một loại bảng ảo cho phép người dùng thực hiện các thao tác sau:
+>>- Cấu trúc dữ liệu theo cách mà người dùng tìm thấy tự nhiên hoặc trực quan.
+>>- Hạn chế quyền truy cập vào dữ liệu theo cách mà người dùng có thể nhìn thấy và (đôi khi) sửa đổi chính xác những gì họ cần.
+>>- Tóm tắt dữ liệu từ các bảng khác nhau có thể được sử dụng để tạo báo cáo.
+>
+2. Cú pháp.
+>
+>- Cú pháp tạo VIEW cơ bản như sau:
+>>- CREATE VIEW view_name AS SELECT column1, column2..... FROM table_name WHERE [condition];
+>
+>- Truy vấn  tương tự như truy vấn một bảng thực tế.
+>>- VD: SELECT * FROM VIEW_NAME;
+>
+
+#### INDEXES.
+1. Đặc diểm.
+>
+>- Một chỉ mục (index) là một cấu trúc dữ liệu giúp cải thiện tốc độ hoạt động trong một bảng. Các chỉ mục có thể được tạo bằng cách sử dụng một hoặc nhiều cột, giúp tra cứu ngẫu nhiên các bản ghi nhanh chóng và sắp xếp các bản ghi hiệu quả.
+>- Thực tế, các chỉ mục cũng là một loại bảng, giữ khóa chính hoặc trường chỉ mục và một con trỏ cho mỗi bản ghi vào bảng thực tế.
+>- Người dùng không thể xem các chỉ mục, chúng chỉ được sử dụng để tăng tốc độ truy vấn và sẽ được công cụ tìm kiếm cơ sở dữ liệu sử dụng để định vị các bản ghi nhanh chóng.
+>- Các câu lệnh INSERT và UPDATE mất nhiều thời gian hơn trên các bảng có chỉ mục. Lý do là trong khi thực hiện chèn hoặc cập nhật, cơ sở dữ liệu cũng cần chèn hoặc cập nhật các giá trị chỉ mục.
+>
+2. Cú pháp.
+>
+>- Bạn có thể tạo một chỉ mục duy nhất (unique index) trên một bảng. Một chỉ mục duy nhất có nghĩa là hai hàng không thể có cùng giá trị chỉ mục. Đây là cú pháp để tạo một chỉ mục duy nhất trên một bảng:
+>>- CREATE UNIQUE INDEX index_name ON table_name ( column1, column2,...);
+>
+>- Câu lệnh này thêm một chỉ mục bình thường trong đó bất kỳ giá trị nào có thể xuất hiện nhiều hơn một lần.
+>>- CREATE INDEX CUSTOMER_INDEX ON customers (customerNumber);
+>
+>- Primary key trong bảng cũng là một loại chỉ mục.
+>
+
+#### PROCEDURE.
+1. Khái niệm.
+>
+>-  Stored Procedure được tạo ra nhằm thực hiện các lệnh của mysql theo một nhóm việc cụ thể thay vì thực hiện từng thao tác (insert,update,delete).Tương tự như khái niệm function trong các ngôn ngữ lập trình.
+>
+2. Đặc điểm.
+>- Stored Procedure làm tăng hiệu xuất sử lý giữ liệu
+>- Làm giảm thời gian giao tiếp giữa ứng dụng với hệ quản trị cơ sở giữ liệu. thay vì gửi từng câu truy vấn thì nay sẽ chỉ gửi một Stored Procedure.
+>- Stored Procedure có thể lưu lại và sử dụng lại nhiều lần.
+>- Nâng cao tính bảo mật dữ liệu: việc thao tác với database thông qua stored procedure mà không cho thao tác trực tiếp với database sẽ làm giảm các cuộc tấn công thông qua sql injection.
+>- Tạo ra quá nhiều Procedure thì hệ quản trị sẽ sử dụng bộ nhớ để lưu trữ các thủ tục này khá nhiều.
+>- Ngoài ra nếu bạn thực hiện quá nhiều xử lý trong mỗi thủ tục thì đồng nghĩa với việc CPU sẽ làm việc nặng hơn.
+>- MYSQL thì không có tool hỗ trợ Debug Store.
+>
+3. cú pháp.
+> 
+>- Cú pháp tạo stored procedure.
+>
+			DELIMITER //
+			BEGIN
+			CREATE PROCEDURE  stored_procedure_name
+			END //
+			DELIMITER ;
+		
+>
+>- Sử dụng.
+>>- CALL stored_procedure_name;
+
+---
 ## Reflection 26/2/2021.
 #### Một số hàm thao tác với dữ liệu trong SQL.
 ---
