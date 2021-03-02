@@ -1,5 +1,46 @@
 # Module2-reflection
 ***
+## Reflection 2/3/2021.
+#### CRUD trong SQL.
+1.INSERT.
+>
+>- Câu lệnh INSERT INTO được sử dụng để chèn một bản ghi mới vào bảng. 
+>- Cú pháp: 
+>>- Cách 1: Sử dụng khi bạn chỉ định một số cột sẽ chèn dữ liệu vào.
+
+		INSERT INTO table_name (column1, column2, column3, ...) 
+		VALUES (value1, value2, value3, ...) 
+>>- Cách 2: Sử dụng khi bạn muốn chèn giá trị cho tất cả các cột.
+
+		INSERT INTO table_name VALUES (value1, value2, value3, ...) 
+
+>
+2.Lệnh UPDATE.
+>
+>- Câu lệnh UPDATE để cập nhật lại dữ liệu trong bảng.
+>- Cú pháp:
+	
+		UPDATE table_name SET column1 = value1, column2 = value2, ... WHERE condition 
+
+>
+3.Lệnh DELETE
+>
+>- Câu lệnh delete để xóa dữ liệu trong bảng.
+
+>- Cú pháp: 
+
+		delete from table_name where condition
+
+>
+4. Lệnh SELECT
+>
+>- Câu lệnh SELECT để hiện thị dữ liệu trong bảng. Dữ liệu trả về lưu trong bảng kết quả.
+
+>- Cú pháp: 
+
+		select column1, column 2, ... from table_name
+
+---
 ## Reflection 1/3/2021.
 #### View.
 1. Khái niệm.
