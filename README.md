@@ -1,5 +1,31 @@
 # Module2-reflection
 ***
+## Reflection.
+#### Mô hình MVC.
+1. Giới thiệu:
+>
+>- MVC là chữ viết tắt của Model - View - Controller, đây là một mô hình kiến phần mềm được tạo ra với mục đích quản lý và xây dựng dự án phần mềm có hệ thống hơn.
+>- Mô hình này được dùng khá rộng rãi và đặc biệt là trong các ngôn ngữ lập trình web.
+>- Trong PHP hiện tại có khá nhiều Framework và tất cả đều xây dựng từ mô hình MVC.
+>- Mô hình MVC là mô hình cấu trúc gồm ba lớp : Model, View, Controller.
+>>- Model: có nhiệm vụ thao tác với cơ sở dữ liệu, nghĩa là nó sẽ chứa tất cả các hàm, các phương thức truy vấn trực tiếp với dữ liệu và controller sẽ thông qua các hàm, phương thức đó để lấy dữ liệu rồi gửi qua View.
+>>- View: có nhiệm vụ tiếp nhận dữ liệu từ controller và hiển thị nội dung sang các đoạn mã HTML, bạn có thể hiểu nôm na đây người ta còn gọi là thành phần giao diện.
+>>- Controller: đóng vài trò trung gian giữa Model và View. Nó có nhiệm vụ tiếp nhận yêu cầu từ client sau đó xử lý request, load model tương ứng và gửi data qua view tương ứng rồi trả kết quả về cho client
+>
+2. Ưu Điểm.
+>
+>- Hệ thống phân ra từng phần nên dễ dáng phát triển
+>- Chia thành nhiều modun nhỏ nên nhiều người có thể làm chung dự án
+>- Vấn đề bảo trì dễ hơn và cũng dễ nâng cấp.
+>- Dễ dàng debug trong quá trình xây dựng
+>
+3. Nhược điểm.
+>
+>- Đối với dự án nhỏ việc áp dụng mô hình MVC gây cồng kềnh, mất thời gian để xây dựng thư viện, cấu trúc.
+>- Tốn thời gian trung chuyển dữ liệu của các thành phần. 
+>- Phải có kiến thức vững và chuẩn, để tránh bị nhầm lẫn về các mô hình.
+
+---
 ## Reflection 2/3/2021.
 #### CRUD trong SQL.
 1.INSERT.
